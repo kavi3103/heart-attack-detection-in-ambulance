@@ -18,7 +18,7 @@ y = dataset.iloc[:, 13].values
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.1, random_state = 0)
 
-from sklearn.neighbors import LogisticRegression 
+from sklearn.linear_model import LogisticRegression 
 
 kn = LogisticRegression() 
 kn.fit(X_train, y_train) 
